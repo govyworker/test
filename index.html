@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventHub - Events</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-icon">⌘</div>
+          <span>EventHub</span>
+        </div>
+
+        <nav class="nav-links">
+          <a href="./public-view.html" class="nav-link"><span>🌐</span>Public View</a>
+          <a href="./index.html" class="nav-link active"><span>📅</span>Events</a>
+          <a href="./check-in.html" class="nav-link"><span>▦</span>Check-In</a>
+        </nav>
+
+        <a href="./public-view.html" class="user-btn" aria-label="User Profile">👤</a>
+      </header>
+
+      <main class="content">
+        <div class="content-header">
+          <div>
+            <h1>Events</h1>
+            <p>Manage your events and track check-ins</p>
+          </div>
+          <a href="./create-event.html" class="primary-btn">+ Create Event</a>
+        </div>
+
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search events..." />
+        </div>
+
+        <section class="cards-grid">
+          <article class="event-card">
+            <div class="card-header"><h2>Annual Tech Conference 2026</h2><span class="status upcoming">Upcoming</span></div>
+            <div class="row">📅 March 15, 2026</div>
+            <div class="row">🕒 9:00 AM - 5:00 PM</div>
+            <div class="row">📍 Grand Convention Center, Hall A</div>
+            <div class="card-footer"><p><strong>0</strong> / 342 checked in</p><a href="./manage-event.html?event=Annual%20Tech%20Conference%202026" class="manage-btn">Manage</a></div>
+          </article>
+
+          <article class="event-card">
+            <div class="card-header"><h2>Product Launch Webinar</h2><span class="status live">Live</span></div>
+            <div class="row">📅 February 28, 2026</div>
+            <div class="row">🕒 2:00 PM - 3:30 PM</div>
+            <div class="row">📍 Virtual (Zoom)</div>
+            <div class="card-footer"><p><strong>147</strong> / 189 checked in</p><a href="./manage-event.html?event=Product%20Launch%20Webinar" class="manage-btn">Manage</a></div>
+          </article>
+
+          <article class="event-card">
+            <div class="card-header"><h2>Team Building Workshop</h2><span class="status upcoming">Upcoming</span></div>
+            <div class="row">📅 March 5, 2026</div>
+            <div class="row">🕒 10:00 AM - 4:00 PM</div>
+            <div class="row">📍 Riverside Park Pavilion</div>
+            <div class="card-footer"><p><strong>0</strong> / 56 checked in</p><a href="./manage-event.html?event=Team%20Building%20Workshop" class="manage-btn">Manage</a></div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
