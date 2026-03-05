@@ -32,109 +32,37 @@
           <a href="./create-event.html" class="primary-btn">+ Create Event</a>
         </div>
 
-        <div class="controls-row">
-          <div class="search-box">
-            <span>🔍</span>
-            <input id="searchInput" type="text" placeholder="Search events..." />
-          </div>
-          <div class="status-filters" aria-label="Filter by status">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="upcoming">Upcoming</button>
-            <button class="filter-btn" data-filter="live">Live</button>
-            <button class="filter-btn" data-filter="closed">Closed</button>
-          </div>
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search events..." />
         </div>
 
-        <p id="resultsCount" class="results-count">Showing 6 events</p>
-
-        <section class="cards-grid" id="eventsGrid">
-          <article class="event-card" data-title="annual tech conference 2026" data-location="grand convention center, hall a" data-status="upcoming">
+        <section class="cards-grid">
+          <article class="event-card">
             <div class="card-header"><h2>Annual Tech Conference 2026</h2><span class="status upcoming">Upcoming</span></div>
             <div class="row">📅 March 15, 2026</div>
             <div class="row">🕒 9:00 AM - 5:00 PM</div>
             <div class="row">📍 Grand Convention Center, Hall A</div>
-            <div class="card-footer"><p><strong>0</strong> / 342 checked in</p><div class="action-group"><a href="./check-in.html?event=Annual%20Tech%20Conference%202026" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Annual%20Tech%20Conference%202026" class="manage-btn">Manage</a></div></div>
+            <div class="card-footer"><p><strong>0</strong> / 342 checked in</p><a href="./manage-event.html?event=Annual%20Tech%20Conference%202026" class="manage-btn">Manage</a></div>
           </article>
 
-          <article class="event-card" data-title="product launch webinar" data-location="virtual (zoom)" data-status="live">
+          <article class="event-card">
             <div class="card-header"><h2>Product Launch Webinar</h2><span class="status live">Live</span></div>
             <div class="row">📅 February 28, 2026</div>
             <div class="row">🕒 2:00 PM - 3:30 PM</div>
             <div class="row">📍 Virtual (Zoom)</div>
-            <div class="card-footer"><p><strong>147</strong> / 189 checked in</p><div class="action-group"><a href="./check-in.html?event=Product%20Launch%20Webinar" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Product%20Launch%20Webinar" class="manage-btn">Manage</a></div></div>
+            <div class="card-footer"><p><strong>147</strong> / 189 checked in</p><a href="./manage-event.html?event=Product%20Launch%20Webinar" class="manage-btn">Manage</a></div>
           </article>
 
-          <article class="event-card" data-title="team building workshop" data-location="riverside park pavilion" data-status="upcoming">
+          <article class="event-card">
             <div class="card-header"><h2>Team Building Workshop</h2><span class="status upcoming">Upcoming</span></div>
             <div class="row">📅 March 5, 2026</div>
             <div class="row">🕒 10:00 AM - 4:00 PM</div>
             <div class="row">📍 Riverside Park Pavilion</div>
-            <div class="card-footer"><p><strong>0</strong> / 56 checked in</p><div class="action-group"><a href="./check-in.html?event=Team%20Building%20Workshop" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Team%20Building%20Workshop" class="manage-btn">Manage</a></div></div>
-          </article>
-
-          <article class="event-card" data-title="q1 all-hands meeting" data-location="main office, floor 3" data-status="closed">
-            <div class="card-header"><h2>Q1 All-Hands Meeting</h2><span class="status closed">Closed</span></div>
-            <div class="row">📅 February 20, 2026</div>
-            <div class="row">🕒 11:00 AM - 12:00 PM</div>
-            <div class="row">📍 Main Office, Floor 3</div>
-            <div class="card-footer"><p><strong>198</strong> / 210 checked in</p><div class="action-group"><a href="./check-in.html?event=Q1%20All-Hands%20Meeting" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Q1%20All-Hands%20Meeting" class="manage-btn">Manage</a></div></div>
-          </article>
-
-          <article class="event-card" data-title="design sprint kickoff" data-location="innovation lab, room 204" data-status="upcoming">
-            <div class="card-header"><h2>Design Sprint Kickoff</h2><span class="status upcoming">Upcoming</span></div>
-            <div class="row">📅 March 10, 2026</div>
-            <div class="row">🕒 9:00 AM - 12:00 PM</div>
-            <div class="row">📍 Innovation Lab, Room 204</div>
-            <div class="card-footer"><p><strong>0</strong> / 24 checked in</p><div class="action-group"><a href="./check-in.html?event=Design%20Sprint%20Kickoff" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Design%20Sprint%20Kickoff" class="manage-btn">Manage</a></div></div>
-          </article>
-
-          <article class="event-card" data-title="customer appreciation gala" data-location="the grand ballroom" data-status="closed">
-            <div class="card-header"><h2>Customer Appreciation Gala</h2><span class="status closed">Closed</span></div>
-            <div class="row">📅 February 14, 2026</div>
-            <div class="row">🕒 6:00 PM - 10:00 PM</div>
-            <div class="row">📍 The Grand Ballroom</div>
-            <div class="card-footer"><p><strong>431</strong> / 475 checked in</p><div class="action-group"><a href="./check-in.html?event=Customer%20Appreciation%20Gala" class="secondary-btn">Check-In</a><a href="./manage-event.html?event=Customer%20Appreciation%20Gala" class="manage-btn">Manage</a></div></div>
+            <div class="card-footer"><p><strong>0</strong> / 56 checked in</p><a href="./manage-event.html?event=Team%20Building%20Workshop" class="manage-btn">Manage</a></div>
           </article>
         </section>
-
-        <p id="noResults" class="no-results hidden">No events matched your search/filter.</p>
       </main>
     </div>
-
-    <script>
-      const searchInput = document.getElementById('searchInput');
-      const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
-      const cards = Array.from(document.querySelectorAll('.event-card'));
-      const resultsCount = document.getElementById('resultsCount');
-      const noResults = document.getElementById('noResults');
-
-      let activeFilter = 'all';
-
-      function applyFilters() {
-        const term = searchInput.value.trim().toLowerCase();
-        let visible = 0;
-
-        cards.forEach((card) => {
-          const matchesSearch = card.dataset.title.includes(term) || card.dataset.location.includes(term);
-          const matchesFilter = activeFilter === 'all' || card.dataset.status === activeFilter;
-          const show = matchesSearch && matchesFilter;
-          card.classList.toggle('hidden', !show);
-          if (show) visible += 1;
-        });
-
-        resultsCount.textContent = `Showing ${visible} event${visible === 1 ? '' : 's'}`;
-        noResults.classList.toggle('hidden', visible !== 0);
-      }
-
-      searchInput.addEventListener('input', applyFilters);
-      filterButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-          filterButtons.forEach((b) => b.classList.remove('active'));
-          button.classList.add('active');
-          activeFilter = button.dataset.filter;
-          applyFilters();
-        });
-      });
-    </script>
   </body>
 </html>
